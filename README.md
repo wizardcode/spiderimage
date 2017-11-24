@@ -1,2 +1,9 @@
 # spiderimg
-### 一个下载斗鱼主播图片并重命名的Python scrapy小例子。
+* 一个下载斗鱼主播图片并重命名的Python scrapy小例子。
+* 使用ImagesPipeline，重写get_media_requests和item_completed
+* 通过拼接url，每次请求20条数据，从API中读取数据。
+### 代码运行
+```
+scrapy crawl imagespider
+```
+### 爬虫运行完毕后，在spiderimg/spiderimg/spiders/images下看到下载完毕的图片。
